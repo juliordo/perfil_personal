@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color:lightpink;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+nav {
+    background-color:lightpink;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+
+section {
+    margin: 40px;
+    padding: 20px;
+    background-color:#dcc9c9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.avatar {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00bfff;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #00bfff;
+}
+        </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Juliana Ordoñez</h1>
+        <p>"Explorando el mundo a través de la psicología y la curiosidad."</p>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    
+    
+    <section id="acerca-de-mi">
+        <h2>Acerca de mí</h2>
+        <img src="c:\Users\aula 4 pc 11\Documents\juli\img\lana.jpg" alt="Foto de Juliana" class="avatar">
+        <p>Soy Juliana, estudiante de psicología de 19 años, apasionada por el cine, la escritura y el estudio de la mente humana. Vivo en Mar del Plata, Argentina, y disfruto explorando temas que me interesan a través de documentales y lecturas.</p>
+    </section>
+
+    
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Habilidad</th>
+                    <th>Nivel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Psicología</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>Escritura Creativa</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>Análisis de Documentales</td>
+                    <td>Avanzado</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    
+
+</body>
+</html>
+   
